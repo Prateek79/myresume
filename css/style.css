@@ -1,0 +1,644 @@
+@import url("https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Macondo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+
+/*------------------------ Container --------------------- */
+
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+
+/*-------------------------- Navbar ------------------------ */
+
+.navbar {
+    height: 100vh;
+    position: absolute;
+    background: #79bcff;
+    background: -moz-linear-gradient( -45deg, #79bcff 0%, #32b1ed 39%, #0070df 100%);
+    background: -webkit-linear-gradient( -45deg, #79bcff 0%, #32b1ed 39%, #0070df 100%);
+    background: linear-gradient(135deg, #79bcff 0%, #32b1ed 39%, #0070df 100%);
+    width: auto;
+    transition: transform 0.4s ease-in;
+}
+
+.navbargo {
+    transform: translate(-357px, 0px);
+    position: absolute;
+}
+
+.main {
+    width: 80%;
+    overflow: hidden;
+}
+
+.nav_name {
+    font-size: 25px;
+    padding: 30px 20px;
+}
+
+nav ul li {
+    padding: 20px 20px;
+}
+
+nav ul li:hover {
+    background-color: rgb(181, 231, 246);
+    transition: all 0.4s ease-in;
+}
+
+
+/*----------------------- Hamburgur Icon--------------------- */
+
+.hamburger {
+    position: absolute;
+    top: 10px;
+    left: 3px;
+}
+
+.hamburger img {
+    cursor: pointer;
+}
+
+.cross {
+    width: 20px;
+    margin-left: 100px;
+}
+
+@media (min-width: 720px) {
+    .navbargo {
+        transform: translate(0px, 0px);
+        position: relative;
+    }
+}
+
+@media (min-width: 720px) {
+    .hamburger {
+        display: none;
+    }
+    .hamburger img {
+        display: none;
+    }
+    .navbar {
+        position: sticky;
+        top: 0;
+    }
+}
+
+
+/*======================= Index Page Css====================  */
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* margin: auto; */
+}
+
+.bg-img {
+    background-image: url(../Images/pexels-johannes-plenio-1103970.jpg);
+    background-size: cover;
+    width: 100%;
+}
+
+.homeintro {
+    height: 40vh;
+    width: 40vw;
+    margin: auto;
+    text-align: center;
+}
+
+.homeintro .hello {
+    font-size: 4rem;
+    font-family: "Josefin Sans", sans-serif;
+    text-shadow: 2px 2px 0 #040000, 2px -2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000, 2px 0px 0 #000, 0px 2px 0 #000, -2px 0px 0 #000, 0px -2px 0 #000, 6px 0px 4px rgba(32, 29, 29, 0.55);
+    color: #aec7dd;
+}
+
+.homeintro .btn {
+    padding-top: 3rem;
+}
+
+.homeintro .btn button {
+    font-size: 20px;
+    padding: 9px 20px;
+    border-radius: 33px;
+    border: 0px;
+    background-color: rgba(68, 133, 216, 0.831);
+}
+
+.btn button:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: all 0.2s ease-in;
+}
+
+.homeintro .btn button a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: "BIZ UDPGothic", sans-serif;
+}
+
+@media screen and (max-width: 719px) {
+    .homeintro {
+        width: 100%;
+    }
+    .homeintro .hello {
+        font-size: 3rem;
+    }
+}
+
+
+/*======================= Index Page Css End==================  */
+
+
+/*====================== About Page Css=================== */
+
+.main-about {
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(0, 112, 223), rgb(121, 188, 255)) repeat scroll 0% 0%;
+}
+
+.main-info {
+    padding: 10px;
+    width: 90vw;
+    height: 100vh;
+    margin: auto;
+    text-align: center;
+    /* background-color: aliceblue; */
+}
+
+.profile img {
+    border-radius: 3rem;
+    box-shadow: 17.2px 13.6px 9.8px -15px rgba(0, 0, 0, 0.016), 31.6px 24.9px 18.2px -15px rgba(0, 0, 0, 0.029), 43.4px 34.2px 25.2px -15px rgba(0, 0, 0, 0.037), 53px 41.9px 31px -15px rgba(0, 0, 0, 0.044), 61.5px 48.6px 35.7px -15px rgba(0, 0, 0, 0.051), 70.7px 55.9px 39.9px -15px rgba(0, 0, 0, 0.061), 84.7px 66.9px 44.9px -15px rgba(0, 0, 0, 0.072), 112.4px 88.8px 54.5px -15px rgba(0, 0, 0, 0.085), 176px 139px 112px -15px rgba(0, 0, 0, 0.1);
+}
+
+.info {
+    /* background-color: aliceblue; */
+    padding: 10px;
+}
+
+.hello {
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0 #040000, 2px -2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000, 2px 0px 0 #000, 0px 2px 0 #000, -2px 0px 0 #000, 0px -2px 0 #000, 6px 0px 4px rgba(32, 29, 29, 0.55);
+}
+
+.myName {
+    font-size: 60px;
+    padding-top: 10px;
+    text-shadow: 2px 2px 0 #040000, 2px -2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000, 2px 0px 0 #000, 0px 2px 0 #000, -2px 0px 0 #000, 0px -2px 0 #000, 6px 0px 4px rgba(32, 29, 29, 0.55);
+    color: white;
+}
+
+.aboutme {
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+button {
+    padding: 10px;
+    font-size: 20px;
+    border: 0;
+    cursor: pointer;
+    background-color: rgba(0, 255, 255, 0);
+}
+
+button a {
+    text-decoration: none;
+    color: #000;
+    list-style: none;
+    padding: 10px;
+}
+
+button:hover {
+    background-color: #cdeadd;
+    border-radius: 5px;
+    color: black;
+}
+
+@media screen and (max-width: 719px) {
+    .main-about {
+        width: 100%;
+        text-align: center;
+        padding-top: 60px;
+    }
+    .hello {
+        font-size: 20px;
+    }
+    .myName {
+        font-size: 30px;
+    }
+    .aboutme {
+        width: auto;
+    }
+}
+
+
+/*====================== About Page Css End=================== */
+
+
+/* ======================Resume Page CSS===================== */
+
+.main-resume {
+    width: 100vw;
+    margin: auto;
+    height: auto;
+    padding-bottom: 10px;
+    /* background: linear-gradient( 115deg, rgba(47, 168, 213, 0.7), rgba(206, 178, 224, 0.6)); */
+    background: linear-gradient( 59deg, rgba(134, 222, 203, 0.8), rgba(21, 34, 95, 0.9));
+    padding: 0px 10% 10px 10%;
+    font-size: 20px;
+}
+
+.rphoto {
+    width: 100%;
+    /* background-color: rgb(141, 233, 233); */
+}
+
+.resume {
+    width: 50%;
+    padding-top: 10px;
+    /* background-color: aquamarine; */
+}
+
+
+/*------------- Resume Photo  -------------*/
+
+.rsum-photo {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.rsum-photo img {
+    border-radius: 50%;
+    cursor: not-allowed;
+}
+
+.resume h1 {
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.resume p {
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+
+/* .resume .address {
+    width: 40%;
+} */
+
+hr {
+    width: 50%;
+    color: #004cff;
+}
+
+.margin-top {
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 719px) {
+    .main-resume {
+        padding: 0 10px 10px 10px;
+    }
+}
+
+
+/*----------------------- Education section ---------------- */
+
+
+/* .education {
+} */
+
+
+/*------------------------ Skill Section ---------------------*/
+
+.skills {
+    margin-top: 30px;
+}
+
+.skills progress {
+    height: 20px;
+}
+
+.html-bar {
+    width: 50%;
+    border: 0.3px solid black;
+    text-align: center;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.h-bar {
+    width: 80%;
+    color: black;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(152, 248, 238), rgb(0, 0, 255)) repeat scroll 0% 0%;
+}
+
+.css-bar {
+    width: 50%;
+    border: 0.3px solid black;
+    text-align: center;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.c-bar {
+    width: 70%;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(152, 248, 238), rgb(0, 0, 255)) repeat scroll 0% 0%;
+}
+
+.javascript-bar {
+    width: 50%;
+    border: 0.3px solid black;
+    text-align: center;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.js-bar {
+    width: 50%;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(152, 248, 238), rgb(0, 0, 255)) repeat scroll 0% 0%;
+}
+
+.Wordpress-bar {
+    width: 50%;
+    border: 0.3px solid black;
+    text-align: center;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.wp-bar {
+    width: 30%;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(152, 248, 238), rgb(0, 0, 255)) repeat scroll 0% 0%;
+}
+
+
+/*--------------------- Certificat section ------------------*/
+
+
+/* .certificate {
+} */
+
+
+/*--------------------- Volunteer section ------------------*/
+
+
+/* .volunteer {
+} */
+
+
+/*--------------------- Project section ------------------*/
+
+.project p {
+    margin-top: 10px;
+    width: 40%;
+}
+
+.hamburger {
+    position: absolute;
+    top: 10px;
+    left: 3px;
+}
+
+@media (max-width: 719px) {
+    .rphoto {
+        display: block;
+        text-align: center;
+    }
+    .main-resume {
+        text-align: center;
+    }
+    .resume {
+        text-align: -moz-center;
+        width: 100%;
+    }
+    hr {
+        width: 100%;
+    }
+    .w-100 {
+        width: 100%;
+    }
+    .resume p {
+        text-align: left;
+    }
+    .resume .address {
+        width: 100%;
+    }
+    .education h4 {
+        text-align: left;
+    }
+    .education p {
+        text-align: left;
+    }
+    .skills p {
+        text-align: left;
+    }
+    .certificate h3 {
+        text-align: left;
+    }
+    .certificate p {
+        text-align: left;
+    }
+    .volunteer p {
+        text-align: left;
+    }
+    .project p {
+        text-align: left;
+        width: 100%;
+    }
+}
+
+
+/* ====================Resume Page CSS End=================== */
+
+
+/*===================== Contect Page CSS==================== */
+
+.main-contect {
+    /* width: 90vw; */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../Images/Simple-Minimalist-Background-Image.jpg);
+    background-size: cover;
+}
+
+.contect-form {
+    width: 50%;
+    height: auto;
+    text-align: center;
+    padding-bottom: 10px;
+    background-image: url(../Images/dwrlpb1x.bmp);
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.contect-form p {
+    font-size: 3rem;
+    padding: 2rem;
+    color: red;
+}
+
+input {
+    width: 90%;
+    font-size: 20px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    border-left: 0px;
+    outline: none;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+button {
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
+    padding: 6px 15px;
+    cursor: pointer;
+    /* border: 2px solid rgb(255, 255, 255); */
+    background-color: rgba(255, 255, 255, 0.132);
+    border-radius: 10px;
+}
+
+button:hover {
+    /* border-radius: 5px;  */
+    background-color: rgba(255, 255, 255, 0.257);
+}
+
+@media screen and (max-width: 719px) {
+    .contect-form {
+        width: 95%;
+    }
+    .contect-form p {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .contect-form {
+        width: 95%;
+    }
+    .contect-form p {
+        font-size: 30px;
+    }
+}
+
+
+/*=====================Contect Page CSS End==================== */
+
+
+/* =======================Member Page CSS===================== */
+
+.members {
+    display: block;
+    height: auto;
+    width: 100vw;
+    padding: 15px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(0, 112, 223), rgb(121, 188, 255)) repeat scroll 0% 0%;
+}
+
+.member {
+    padding: 25px;
+    width: 50%;
+    margin: auto;
+    /* background-color: gray; */
+}
+
+.member img {
+    /* width: 300px; */
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.member img:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: all 0.2s ease-in;
+}
+
+.mname a:hover {
+    /* background: #28e4f9; */
+    background: linear-gradient( 282deg, rgba(249, 255, 246, 0.89), rgba(149, 29, 98, 0.9));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.2s ease-in;
+}
+
+.member1 {
+    border-bottom: 5px dotted white;
+    /* border-radius: 3px; */
+}
+
+.member2 {
+    border-bottom: 5px dotted white;
+}
+
+.mname {
+    font-size: 40px;
+}
+
+@media screen and (max-width: 719px) {
+    .member {
+        width: 100%;
+    }
+    .member img {
+        margin-bottom: 20px;
+    }
+    .member img:hover {
+        -moz-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        transition: all 0.2s ease-in;
+    }
+}
+
+
+/* =====================Member Page CSS End=====================*/
+
+
+/*---------------------------- Footer-----------------------  */
+
+footer {
+    padding: 10px;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(6, 19, 181), rgb(121, 131, 251)) repeat scroll 0% 0%;
+    color: black;
+    text-align: center;
+}
